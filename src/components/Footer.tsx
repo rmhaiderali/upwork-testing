@@ -14,15 +14,20 @@ export default component$(
     const canGotoNext = currentPage < 3;
 
     return (
-      <div class="flex border-t-2">
-        <textarea
-          class="mx-12 my-4 grow resize-none rounded-md bg-[#F5F5F5] px-4 py-[0.75rem] outline-none"
-          rows={2}
-          value={
-            "I am going to read you a list of substances. Could you tell me which ones you have used, how long, how recently, and how you used them?"
-          }
-        />
-        <div class="mr-12 flex items-center">
+      <div class="b-sm:flex-wrap b-sm:justify-center flex border-t-2">
+        <div class="b-sm:w-full grow">
+          <div class="mx-12 my-4 flex overflow-hidden rounded-md">
+            <textarea
+              class="h-full w-full resize-none bg-[#F5F5F5] px-4 py-[0.75rem] outline-none"
+              rows={2}
+              value={
+                "I am going to read you a list of substances. Could you tell me which ones you have used, how long, how recently, and how you used them?"
+              }
+            />
+          </div>
+        </div>
+
+        <div class="a-sm:mr-12 b-sm:mb-4 flex items-center">
           <button
             class="rounded px-[1.7rem] py-[0.8rem]"
             style={"background:" + (canGotoPrevious ? "#1F27B7" : "#EFF0FA")}

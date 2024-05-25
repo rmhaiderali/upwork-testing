@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <div class="flex h-full grow">
+    <div class="b-md:flex-wrap flex grow">
       <div class="flex grow">
         <div class="mb-6 ml-6 mt-8">
           <div class="flex items-start">
@@ -21,7 +21,7 @@ export default component$(() => {
           </div>
         </div>
       </div>
-      <aside class="flex w-[300px] min-w-[300px] flex-col flex-wrap border-l-2 px-8 pt-6">
+      <aside class="a-md:min-w-[300px] b-md:min-w-full a-md:border-l-2 b-md:border-t-2 a-md:pt-6 b-md:pt-2 flex flex-col flex-wrap p-8">
         {[
           "4-7 days/week",
           "1-3 days/week",

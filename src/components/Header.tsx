@@ -37,9 +37,9 @@ export default component$(({ currentPage }: { currentPage: number }) => {
           />
         </svg>
       </div>
-      <div class="flex grow flex-col">
-        <div class="m-4 flex grow items-center">
-          <div class="grow font-medium text-[#8386BB]">
+      <div class="flex min-w-0 grow flex-col">
+        <div class="m-4 flex items-center">
+          <div class="grow overflow-hidden text-ellipsis whitespace-nowrap font-medium text-[#8386BB]">
             Dimension I (Acute intoxication or withdrawal potential)
             <span class="text-[#1F27B7]">{" / Assessment (A1-A8)"}</span>
           </div>

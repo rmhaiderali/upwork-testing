@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <div class="flex h-full grow">
+    <div class="b-md:flex-wrap flex grow">
       <div class="flex grow">
         <div class="mb-6 ml-6 mt-8">
           <div class="flex items-start">
@@ -17,7 +17,7 @@ export default component$(() => {
               <div class="mb-6 mr-6 flex flex-col">
                 <label class="ml-2 text-[#8386BB]">Date of last use:</label>
                 <input
-                  class="rounded-md border-2 border-[#F5F5F5] px-4 py-[0.75rem] outline-none"
+                  class="w-[10rem] rounded-md border-2 border-[#F5F5F5] px-4 py-[0.75rem] outline-none"
                   type="text"
                   value={"01-05-2024"}
                 />
@@ -32,10 +32,10 @@ export default component$(() => {
               </div>
               <div class="mb-6 mr-6 flex flex-col">
                 <label class="ml-2 text-[#8386BB]">
-                  In last 30 days, how often you had :
+                  In last 30 days, how often:
                 </label>
                 <input
-                  class="w-[16.2rem] rounded-md border-2 border-[#F5F5F5] px-4 py-[0.75rem] outline-none"
+                  class="w-[13rem] rounded-md border-2 border-[#F5F5F5] px-4 py-[0.75rem] outline-none"
                   type="text"
                   value={"> 5 times"}
                 />
@@ -61,7 +61,7 @@ export default component$(() => {
           </div>
         </div>
       </div>
-      <aside class="flex w-[300px] min-w-[300px] flex-col flex-wrap border-l-2 px-8 pt-6">
+      <aside class="a-md:min-w-[300px] b-md:min-w-full a-md:border-l-2 b-md:border-t-2 a-md:pt-6 b-md:pt-2 flex flex-col flex-wrap p-8">
         {["Yes", "Never used"].map((item) => (
           <label
             class="mt-6 flex items-center rounded-full bg-[#EFF0FA] p-4"
